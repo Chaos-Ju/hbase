@@ -16,13 +16,6 @@
 # specific language governing permissions and limitations
 # under the License.
 
-# XXX Don't commit this part.
-# fail fast
-mkdir -p "${OUTPUTDIR}"
-echo "placeholder" >> "${OUTPUTDIR}/console-report.html"
-exit 1772
-# /XXX Don't commit this part.
-
 declare -i missing_env=0
 # Validate params
 for required_env in "TESTS" "TOOLS" "BASEDIR" "ARCHIVE_PATTERN_LIST" "OUTPUT_RELATIVE" \
